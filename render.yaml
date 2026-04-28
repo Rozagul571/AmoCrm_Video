@@ -1,16 +1,27 @@
 services:
   - type: web
-    name: amocrm-video
+    name: amocrm-video-1
     runtime: python
     plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
     envVars:
-      - key: ADMIN_PHONE
-        sync: false
-      - key: ADMIN_API_ID
-        sync: false
-      - key: ADMIN_API_HASH
-        sync: false
-      - key: VIDEO_FILE_ID
-        sync: false
+      - key: ADMIN1_API_ID
+        value: 30997088
+      - key: ADMIN1_API_HASH
+        value: 9e4c61409e9ab0df962df01883c2255d
+      - key: ADMIN1_SESSION_STRING
+        value: YOUR_SESSION_STRING_1
+
+      - key: VIDEO_FILE_ID_1
+        value: 5429502629728259928
+
+      - key: ADMIN2_API_ID
+        value: 39035419
+      - key: ADMIN2_API_HASH
+        value: b4a93d29dd08b6d06bff2cf4c952f082
+      - key: ADMIN2_SESSION_STRING
+        value: YOUR_SESSION_STRING_2
+
+      - key: VIDEO_FILE_ID_2
+        value: 5429502629728259928

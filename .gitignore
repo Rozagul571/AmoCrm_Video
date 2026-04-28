@@ -21,4 +21,4 @@ venv/
 
 # Secrets
 .env
-config.json
+config.json*.session
